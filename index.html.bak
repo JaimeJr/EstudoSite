@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO -->
+    <title>Auxiliar Administrativo: Do Zero à Contratação | Curso Completo</title>
+    <meta name="description" content="Curso completo para auxiliar administrativo com simulador interativo. Aprenda na prática e conquiste sua vaga sem experiência. Preço especial R$ 97." />
+    <meta name="keywords" content="auxiliar administrativo, curso auxiliar administrativo, como ser auxiliar administrativo, simulador administrativo, primeiro emprego" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Auxiliar Administrativo: Do Zero à Contratação | Curso Completo" />
+    <meta property="og:description" content="Curso completo para auxiliar administrativo com simulador interativo. Aprenda na prática e conquiste sua vaga sem experiência." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://auxiliar-administrativo.com.br" />
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <!-- ============================================================
+    HEADER / NAVEGAÇÃO
+    ============================================================ -->
+    <header class="header" role="banner">
+        <div class="container header__container">
+            <!-- Logo -->
+            <a href="#" class="header__logo" aria-label="Auxiliar Administrativo - Do Zero à Contratação">
+                <span class="header__logo-icon">📘</span>
+                <span class="header__logo-text">Auxiliar<span>ADM</span></span>
+            </a>
+            
+            <!-- Botão Hambúrguer (mobile) -->
+            <button class="header__hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+            
+            <!-- Menu -->
+            <nav class="header__nav" id="mainNav" role="navigation" aria-label="Menu principal">
+                <ul class="header__menu">
+                    <li><a href="#hero" class="header__link">Home</a></li>
+                    <li><a href="#sobre" class="header__link">Sobre</a></li>
+                    <li><a href="#simulador" class="header__link">Simulador</a></li>
+                    <li><a href="#modulos" class="header__link">Módulos</a></li>
+                    <li><a href="#precos" class="header__link">Preços</a></li>
+                    <li><a href="#faq" class="header__link">FAQ</a></li>
+                </ul>
+                <!-- Botão CTA no menu (destacado) -->
+                <a href="#precos" class="btn btn--primary header__cta">
+                    <i class="fas fa-bolt"></i> Comprar Agora
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- ============================================================
+    HERO - Seção Principal
+    ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <!-- Badge de destaque -->
+                <div class="hero__badge">
+                    <i class="fas fa-fire"></i> 2ª profissão mais anunciada no Brasil em 2025
+                </div>
+                
+                <h1 class="hero__title" id="hero-title">
+                    Do zero ao primeiro emprego:<br />
+                    <span>Guia completo de Auxiliar Administrativo</span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    Aprenda na prática com um <strong>simulador interativo</strong> e conquiste sua vaga 
+                    <strong>sem experiência</strong> prévia. 70% das vagas não exigem experiência 
+                    e você vai estar pronto para elas.
+                </p>
+                
+                <!-- Diferenciais em badges -->
+                <div class="hero__badges">
+                    <span class="hero__badge-item">
+                        <i class="fas fa-book"></i> E-book Premium
+                    </span>
+                    <span class="hero__badge-item">
+                        <i class="fas fa-laptop"></i> Simulador Interativo
+                    </span>
+                    <span class="hero__badge-item">
+                        <i class="fas fa-bullseye"></i> Pronto para o Mercado
+                    </span>
+                </div>
+                
+                <!-- CTA Principal -->
+                <a href="#precos" class="btn btn--hero">
+                    <i class="fas fa-fire"></i> Quero me tornar Auxiliar Administrativo R$ 97,00
+                </a>
+                
+                <!-- Selos de confiança -->
+                <div class="hero__trust">
+                    <span><i class="fas fa-check-circle"></i> Acesso imediato</span>
+                    <span><i class="fas fa-lock"></i> Pagamento seguro</span>
+                    <span><i class="fas fa-shield-alt"></i> Garantia 7 dias</span>
+                </div>
+            </div>
+            
+            <div class="hero__image">
+                <img 
+                    src="https://placehold.co/600x500/1a237e/FFFFFF?text=Ilustra%C3%A7%C3%A3o+Auxiliar+ADM" 
+                    alt="Ilustração de uma pessoa organizando documentos e usando ferramentas administrativas em um escritório moderno"
+                    loading="lazy"
+                />
+                <!-- Card flutuante de estatística -->
+                <div class="hero__stat-card">
+                    <span class="hero__stat-number">29 mil+</span>
+                    <span class="hero__stat-label">vagas abertas em 3 meses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================
+    SEÇÃO: MOTIVAÇÃO - "Por que ser Auxiliar Administrativo?"
+    ============================================================ -->
+    <section class="motivacao" id="sobre" aria-labelledby="motivacao-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por que escolher essa carreira</span>
+                <h2 class="section-title" id="motivacao-title">Por que ser Auxiliar Administrativo?</h2>
+                <p class="section-subtitle">
+                    Uma das profissões que mais contratam no Brasil e você pode começar <strong>sem experiência</strong>.
+                </p>
+            </div>
+            
+            <div class="motivacao__grid">
+                <!-- Card 1 -->
+                <div class="motivacao__card">
+                    <div class="motivacao__icon">🚀</div>
+                    <h3>Qualquer pessoa pode começar</h3>
+                    <p>
+                        Não exige curso superior nem experiência prévia. Com ensino médio completo 
+                        e vontade de aprender, você já pode dar o primeiro passo.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="motivacao__card">
+                    <div class="motivacao__icon">🏢</div>
+                    <h3>Atue em diversos setores</h3>
+                    <p>
+                        RH, Financeiro, Comercial, Logística, Saúde, Educação são <strong>milhares</strong> 
+                        de empresas de todos os portes precisando de você.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="motivacao__card">
+                    <div class="motivacao__icon">📈</div>
+                    <h3>Evolução na carreira</h3>
+                    <p>
+                        Comece como <strong>Auxiliar</strong>, cresça para <strong>Assistente</strong> 
+                        e chegue a <strong>Analista</strong>. A progressão é real e acessível.
+                    </p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="motivacao__card">
+                    <div class="motivacao__icon">📊</div>
+                    <h3>Mercado em crescimento</h3>
+                    <p>
+                        <strong>+1,1 milhão</strong> de profissionais atuando formalmente. 
+                        A 2ª profissão mais anunciada no Brasil em 2025, segundo a Catho.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Dado de destaque -->
+            <div class="motivacao__destaque">
+                <div class="motivacao__destaque-item">
+                    <span class="motivacao__destaque-numero">70%</span>
+                    <span class="motivacao__destaque-texto">das vagas NÃO exigem experiência prévia</span>
+                </div>
+                <div class="motivacao__destaque-divider"></div>
+                <div class="motivacao__destaque-item">
+                    <span class="motivacao__destaque-numero">R$ 1.800 – 2.500</span>
+                    <span class="motivacao__destaque-texto">é a faixa salarial inicial para iniciantes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================
+    SEÇÃO: MÓDULOS - "O que você vai aprender"
+    ============================================================ -->
+    <section class="modulos" id="modulos" aria-labelledby="modulos-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conteúdo completo</span>
+                <h2 class="section-title" id="modulos-title">O que você vai aprender</h2>
+                <p class="section-subtitle">
+                    5 módulos com <strong>metodologia "Ler, Praticar, Revisar"</strong> 
+                    o conhecimento que vai te levar ao primeiro emprego.
+                </p>
+            </div>
+            
+            <div class="modulos__grid">
+                <!-- Módulo 1 -->
+                <article class="modulos__card">
+                    <span class="modulos__card-number">01</span>
+                    <h3>O que é um Auxiliar Administrativo</h3>
+                    <ul>
+                        <li>O que faz um auxiliar no dia a dia</li>
+                        <li>Onde atuar (setores e tipos de empresa)</li>
+                        <li>Mercado de trabalho e oportunidades</li>
+                        <li>Plano de carreira: Auxiliar → Assistente → Analista</li>
+                    </ul>
+                </article>
+                
+                <!-- Módulo 2 -->
+                <article class="modulos__card">
+                    <span class="modulos__card-number">02</span>
+                    <h3>Habilidades Essenciais</h3>
+                    <ul>
+                        <li>Comunicação empresarial (e-mails, telefone, atendimento)</li>
+                        <li>Organização e arquivamento de documentos</li>
+                        <li>Gestão de planilhas e informações</li>
+                        <li>Postura profissional e soft skills</li>
+                    </ul>
+                </article>
+                
+                <!-- Módulo 3 -->
+                <article class="modulos__card">
+                    <span class="modulos__card-number">03</span>
+                    <h3>Ferramentas do Dia a Dia</h3>
+                    <ul>
+                        <li>Planilhas (Excel / Google Sheets) 94% das vagas exigem</li>
+                        <li>Documentos profissionais (Word / Google Docs)</li>
+                        <li>E-mail corporativo (Outlook / Gmail)</li>
+                        <li>Dicas práticas para o escritório</li>
+                    </ul>
+                </article>
+                
+                <!-- Módulo 4 -->
+                <article class="modulos__card">
+                    <span class="modulos__card-number">04</span>
+                    <h3>O Mercado para Auxiliar Administrativo</h3>
+                    <ul>
+                        <li>Faixas salariais (iniciante → especialista)</li>
+                        <li>Benefícios e pacotes de contratação</li>
+                        <li>Como negociar salário</li>
+                        <li>Onde encontrar as melhores vagas</li>
+                    </ul>
+                </article>
+                
+                <!-- Módulo 5 -->
+                <article class="modulos__card modulos__card--destaque">
+                    <span class="modulos__card-number">05</span>
+                    <h3>Como Conquistar a Vaga</h3>
+                    <ul>
+                        <li>Currículo para quem não tem experiência</li>
+                        <li>Preparação para entrevistas (com técnica STAR)</li>
+                        <li>Perguntas mais comuns e como respondê-las</li>
+                    </ul>
+                    <span class="modulos__card-badge">🔥 O mais importante!</span>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================
+    SEÇÃO: SIMULADOR - Diferencial Interativo (com Carrossel)
+    ============================================================ -->
+    <section class="simulador" id="simulador" aria-labelledby="simulador-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Diferencial exclusivo</span>
+                <h2 class="section-title" id="simulador-title">Conheça o Simulador Interativo</h2>
+                <p class="section-subtitle">
+                    <strong>Viva o dia a dia de um escritório</strong> antes da entrevista. 
+                    Um ambiente simulado onde você pode errar à vontade e aprender na prática.
+                </p>
+            </div>
+
+            <div class="simulador__conteudo">
+                <div class="simulador__texto">
+                    <p>
+                        O simulador é um <strong>"estágio simulado"</strong> que coloca você em 
+                        cenários reais de escritório. São <strong>10 cenários interativos</strong> 
+                        que preparam você para o que realmente acontece no dia a dia.
+                    </p>
+                    <p>
+                        Diferente de um curso teórico, aqui você <strong>pratica</strong> 
+                        as habilidades que as empresas mais valorizam — e pode errar à vontade 
+                        em um ambiente seguro.
+                    </p>
+
+                    <ul class="simulador__lista">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Gerenciamento de e-mails e demandas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open"></i>
+                            <span>Organização de documentos e arquivamento</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Atendimento telefônico profissional</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Gestão de prazos e prioridades</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CARROSSEL -->
+                <div class="carrossel" role="region" aria-label="Galeria de imagens do simulador">
+                    <div class="carrossel__container">
+                        <!-- Slide 1 -->
+                        <div class="carrossel__slide carrossel__slide--active">
+                            <img 
+                                src="assets/images/simulador-1.png" 
+                                alt="Dashboard do simulador administrativo mostrando tarefas e demandas"
+                                loading="lazy"
+                            />
+                            <div class="carrossel__caption">
+                                <h4>📊 Dashboard de Tarefas</h4>
+                                <p>Gerencie demandas e prioridades em tempo real</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carrossel__slide">
+                            <img 
+                                src="assets/images/simulador-2.png" 
+                                alt="Simulação de gerenciamento de e-mails profissionais"
+                                loading="lazy"
+                            />
+                            <div class="carrossel__caption">
+                                <h4>📧 Gerenciamento de E-mails</h4>
+                                <p>Pratique a comunicação profissional por e-mail</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carrossel__slide">
+                            <img 
+                                src="assets/images/simulador-3.png" 
+                                alt="Simulação de gestão de agenda e prazos"
+                                loading="lazy"
+                            />
+                            <div class="carrossel__caption">
+                                <h4>📅 Gestão de Agenda</h4>
+                                <p>Organize compromissos e cumpra prazos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botões de navegação -->
+                    <button class="carrossel__btn carrossel__btn--prev" aria-label="Imagem anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carrossel__btn carrossel__btn--next" aria-label="Próxima imagem">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicadores (bolinhas) -->
+                    <div class="carrossel__indicators">
+                        <button class="carrossel__dot carrossel__dot--active" data-slide="0" aria-label="Ir para imagem 1"></button>
+                        <button class="carrossel__dot" data-slide="1" aria-label="Ir para imagem 2"></button>
+                        <button class="carrossel__dot" data-slide="2" aria-label="Ir para imagem 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================
+    SEÇÃO: PREÇOS - Área de Compra
+    ============================================================ -->
+    <section class="precos" id="precos" aria-labelledby="precos-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Invista na sua carreira</span>
+                <h2 class="section-title" id="precos-title">Comece sua jornada hoje</h2>
+                <p class="section-subtitle">
+                    Acesso imediato ao curso completo + simulador + bônus. 
+                    <strong>Oportunidade única</strong> para quem quer entrar no mercado.
+                </p>
+            </div>
+            
+            <div class="precos__card">
+                <!-- Preço com desconto -->
+                <div class="precos__oferta">
+                    <span class="precos__badge">🔥 Oferta Especial</span>
+                    <div class="precos__valores">
+                        <span class="precos__regular">De R$ 150,00</span>
+                        <span class="precos__especial">por R$ 97,00</span>
+                    </div>
+                    <span class="precos__parcela">ou 12x de R$ 10,03</span>
+                </div>
+                
+                <!-- Lista de benefícios -->
+                <ul class="precos__beneficios">
+                    <li><i class="fas fa-check-circle"></i> E-book completo com 5 módulos</li>
+                    <li><i class="fas fa-check-circle"></i> Simulador interativo com 10 cenários</li>
+                    <li><i class="fas fa-check-circle"></i> Metodologia "Ler, Praticar, Revisar"</li>
+                    <li><i class="fas fa-check-circle"></i> Acesso imediato, comece agora</li>
+                    <li><i class="fas fa-check-circle"></i> Atualizações gratuitas</li>
+                </ul>
+                
+                <!-- CTA Principal -->
+                <a href="#" class="btn btn--precos">
+                    <i class="fas fa-shopping-cart"></i> COMPRAR AGORA por R$ 97,00
+                </a>
+                
+                <!-- Formas de pagamento e selos -->
+                <div class="precos__pagamento">
+                    <span><i class="fas fa-credit-card"></i> Cartão</span>
+                    <span><i class="fas fa-qrcode"></i> Pix</span>
+                    <span><i class="fas fa-barcode"></i> Boleto</span>
+                </div>
+                
+                <div class="precos__selos">
+                    <span><i class="fas fa-lock"></i> Pagamento Seguro</span>
+                    <span><i class="fas fa-bolt"></i> Acesso Imediato</span>
+                    <span><i class="fas fa-undo"></i> Garantia 7 dias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================
+    SEÇÃO: FAQ - Perguntas Frequentes
+    ============================================================ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dúvidas?</span>
+                <h2 class="section-title" id="faq-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">
+                    Tudo o que você precisa saber antes de começar sua jornada.
+                </p>
+            </div>
+            
+            <div class="faq__lista">
+                <!-- Item 1 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>Para quem é o curso?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            Para qualquer pessoa que quer começar uma carreira na área administrativa, 
+                            <strong>sem necessidade de experiência prévia</strong>. É ideal para jovens em 
+                            busca do primeiro emprego, pessoas que querem migrar de área ou quem já atua 
+                            em outras funções e deseja se qualificar.
+                        </p>
+                    </div>
+                </details>
+                
+                <!-- Item 2 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>Precisa de experiência?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            <strong>Não!</strong> O curso foi feito especialmente para quem está começando 
+                            do zero. Você vai aprender tudo o que precisa, desde o básico até como se preparar 
+                            para entrevistas. 70% das vagas para auxiliar administrativo não exigem 
+                            experiência prévia.
+                        </p>
+                    </div>
+                </details>
+                
+                <!-- Item 3 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>Como funciona o simulador?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            O simulador é um <strong>ambiente interativo</strong> onde você vive situações 
+                            reais de escritório. São 10 cenários que simulam tarefas como gerenciar e-mails, 
+                            organizar documentos, atender chamadas e cumprir prazos. Você pode errar à vontade 
+                            e recebe feedback imediato sobre cada decisão.
+                        </p>
+                    </div>
+                </details>
+                
+                <!-- Item 4 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>Como acesso o conteúdo?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            Todo o conteúdo é <strong>digital</strong> e você tem acesso imediato após a compra. 
+                            O e-book pode ser lido no computador, tablet ou celular. O simulador é acessível 
+                            diretamente pelo navegador, sem necessidade de instalação.
+                        </p>
+                    </div>
+                </details>
+                
+                <!-- Item 5 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>E se eu não gostar?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            Você tem <strong>7 dias de garantia</strong> para testar o curso. Se não gostar 
+                            ou achar que não é para você, devolvemos 100% do seu dinheiro, sem perguntas. 
+                            Queremos que você fique satisfeito com seu investimento.
+                        </p>
+                    </div>
+                </details>
+                
+                <!-- Item 6 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>Posso parcelar?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            Sim! Você pode parcelar em até <strong>2x sem juros</strong> no cartão de crédito. 
+                            Também aceitamos Pix (à vista com desconto) e boleto bancário.
+                        </p>
+                    </div>
+                </details>
+                
+                <!-- Item 7 -->
+                <details class="faq__item">
+                    <summary class="faq__pergunta">
+                        <span>Como funciona o suporte?</span>
+                        <i class="fas fa-chevron-down faq__icone"></i>
+                    </summary>
+                    <div class="faq__resposta">
+                        <p>
+                            Você tem suporte direto por e-mail para tirar dúvidas sobre o conteúdo, 
+                            o simulador ou qualquer questão técnica. Nossa equipe responde em até 
+                            <strong>24 horas úteis</strong>.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Logo e descrição -->
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span>📘</span> Auxiliar<span>ADM</span>
+                    </a>
+                    <p class="footer__desc">
+                        Do zero ao primeiro emprego, o guia completo para quem quer 
+                        começar uma carreira administrativa com confiança.
+                    </p>
+                </div>
+                
+                <!-- Links úteis -->
+                <nav class="footer__nav" aria-label="Links do rodapé">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#simulador">Simulador</a></li>
+                        <li><a href="#modulos">Módulos</a></li>
+                        <li><a href="#precos">Preços</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Redes sociais -->
+                <div class="footer__social">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer__social-links">
+                        <a href="#" aria-label="Instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer__copy">
+                <p>&copy; 2026 Auxiliar Administrativo, Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================================================
+    BOTÃO VOLTAR AO TOPO
+    ============================================================ -->
+    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script src="js/main.js" defer></script>
+    
+</body>
+</html>
