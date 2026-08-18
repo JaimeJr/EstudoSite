@@ -480,4 +480,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
     })();
 
+    // ============================================================
+// BOTÃO DE COMPRA - APENAS NA SEÇÃO PREÇOS (com parâmetro)
+// ============================================================
+
+    function configurarBotaoCompra() {
+        const btnPrecos = document.querySelector('.btn--precos');
+
+        if (!btnPrecos) {
+            return;
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const plataforma = urlParams.get('plataforma');
+
+        const links = {
+            kiwify: 'https://pay.kiwify.com.br/bP8zGKE',
+            hotmart: 'https://pay.hotmart.com/Q107215918X'
+        };
+
+        let linkEscolhido;
+        let plataformaEscolhida;
+
+        if (plataforma === 'hotmart') {
+            linkEscolhido = links.hotmart;
+            plataformaEscolhida = 'HOTMART';
+        } else {
+            linkEscolhido = links.kiwify;
+            plataformaEscolhida = 'KIWIFY';
+        }
+
+        btnPrecos.href = linkEscolhido;
+
+        // 6. (OPCIONAL) ALTERA O TEXTO DO BOTÃO PARA IDENTIFICAR A PLATAFORMA
+        if (plataformaEscolhida === 'HOTMART') {
+            btnPrecos.innerHTML = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
+        } else {
+            btnPrecos.innerHTML = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
+        }
+    }
+    configurarBotaoCompra();    
+
 }); // fim DOMContentLoaded
