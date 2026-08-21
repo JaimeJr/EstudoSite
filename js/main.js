@@ -480,44 +480,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
     })();
 
-    // ============================================================
-// BOTÃO DE COMPRA - APENAS NA SEÇÃO PREÇOS (com parâmetro)
-// ============================================================
+    function getParamFromUrl(paramName) {
+        // 1. Tenta ler dos parâmetros normais (?param=valor)
+        const urlParams = new URLSearchParams(window.location.search);
+        let value = urlParams.get(paramName);
+        
+        if (value !== null) {
+            return value;
+        }
+
+        const hash = window.location.hash;
+        if (hash.includes('?')) {
+            const hashParams = new URLSearchParams(hash.split('?')[1]);
+            value = hashParams.get(paramName);
+            if (value !== null) {
+                return value;
+            }
+        }
+
+        return null;
+    }
 
     function configurarBotaoCompra() {
         const btnPrecos = document.querySelector('.btn--precos');
+        if (!btnPrecos) return;
 
-        if (!btnPrecos) {
-            return;
-        }
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const plataforma = urlParams.get('plataforma');
+        const plataforma = getParamFromUrl('plataforma');
 
         const links = {
             kiwify: 'https://pay.kiwify.com.br/bP8zGKE',
             hotmart: 'https://pay.hotmart.com/Q107215918X'
         };
 
-        let linkEscolhido;
-        let plataformaEscolhida;
+        const isHotmart = plataforma && plataforma.toLowerCase().includes('hotmart');
 
-        if (plataforma === 'hotmart') {
+        console.log(plataforma);
+        let linkEscolhido;
+        let textoBotao;
+
+        if (isHotmart) {
             linkEscolhido = links.hotmart;
-            plataformaEscolhida = 'HOTMART';
+            textoBotao = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
         } else {
             linkEscolhido = links.kiwify;
-            plataformaEscolhida = 'KIWIFY';
+            textoBotao = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
         }
 
+        // Aplica ao botão
         btnPrecos.href = linkEscolhido;
-
-        // 6. (OPCIONAL) ALTERA O TEXTO DO BOTÃO PARA IDENTIFICAR A PLATAFORMA
-        if (plataformaEscolhida === 'HOTMART') {
-            btnPrecos.innerHTML = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
-        } else {
-            btnPrecos.innerHTML = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
-        }
+        btnPrecos.innerHTML = textoBotao;
     }
     configurarBotaoCompra();    
 
