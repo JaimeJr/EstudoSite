@@ -508,8 +508,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const plataforma = getParamFromUrl('plataforma');
 
         const links = {
-            kiwify: 'https://pay.kiwify.com.br/bP8zGKE',
-            hotmart: 'https://pay.hotmart.com/Q107215918X'
+            kiwify: 'https://pay.kiwify.com.br/OrLGUqq',
+            hotmart: 'https://pay.hotmart.com/S107301093G'
         };
 
         const isHotmart = plataforma && plataforma.toLowerCase().includes('hotmart');
