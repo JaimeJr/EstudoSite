@@ -520,10 +520,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (isHotmart) {
             linkEscolhido = links.hotmart;
-            textoBotao = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
+            textoBotao = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 50,00';
         } else {
             linkEscolhido = links.kiwify;
-            textoBotao = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 97,00';
+            textoBotao = '<i class="fas fa-shopping-cart"></i> COMPRAR por R$ 50,00';
         }
 
         // Aplica ao botão
